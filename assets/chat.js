@@ -1,11 +1,10 @@
 /* Top Value Cash Buyers — live chat widget (Sarah, web edition).
    Self-injecting: creates its own styles + DOM, talks to the chat backend.
-   NOTE: CHAT_ENDPOINT is the chat backend URL. This is currently an EPHEMERAL
-   preview tunnel — swap to the stable production URL (e.g. https://chat.topvaluecashbuyers.com/chat)
-   at launch. */
+   CHAT_ENDPOINT = permanent production backend (Caddy HTTPS on the VPS,
+   reverse-proxying the Sarah web agent). */
 (function () {
   "use strict";
-  var CHAT_ENDPOINT = "https://units-supervision-devoted-interesting.trycloudflare.com/chat";
+  var CHAT_ENDPOINT = "https://chat.topvaluecashbuyers.com:8443/chat";
   var GREETING = "Hi, I'm Sarah. Are you thinking about selling a place, or just have a question about how it works?";
 
   // session id (persist per browser tab)
