@@ -11,11 +11,10 @@
    Default = null  ->  NO network call. The form runs in "demo" mode:
    it validates, shows the success message, and console.logs the payload.
 
-   TO GO LIVE: set this to your backend or a Formspree endpoint, e.g.
-       const FORM_ENDPOINT = "https://formspree.io/f/xxxxxxxx";
-   When set, the form will POST JSON (Accept: application/json) and only
-   show success on a 2xx response. */
-const FORM_ENDPOINT = null;
+   LIVE: posts to FormSubmit (no backend needed; emails each lead to the
+   address below). First submission triggers a one-time activation email —
+   click "Activate Form" once and every lead thereafter is delivered. */
+const FORM_ENDPOINT = "https://formsubmit.co/ajax/contact@topvaluecashbuyers.com";
 
 /* Public-facing contact + opt-out details (kept in sync with the footer /
    privacy page placeholders). Update everywhere at launch. */
@@ -107,6 +106,10 @@ const CONTACT_EMAIL = "contact@topvaluecashbuyers.com";
       consentText: form.consent.dataset.consentText || "",
       submittedAt: new Date().toISOString(),
       page: location.href,
+      // FormSubmit control fields (ignored by other backends):
+      _subject: "🏠 New cash-offer lead — Top Value Cash Buyers",
+      _template: "table",
+      _captcha: "false",
     };
 
     const finish = () => {
