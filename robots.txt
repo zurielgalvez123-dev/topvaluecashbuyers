@@ -1,0 +1,9 @@
+# Top Value Cash Buyers — robots.txt
+# Allow all reputable crawlers, including AI/answer-engine bots (AEO/GEO).
+
+User-agent: *
+Allow: /
+
+# Confirm final canonical host (apex vs www) and keep it consistent with
+# the <link rel="canonical"> tags and sitemap below before launch.
+Sitemap: https://topvaluecashbuyers.com/sitemap.xml

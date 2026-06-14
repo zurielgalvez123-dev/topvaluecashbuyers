@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-label="Top Value Cash Buyers">
+  <title>Top Value Cash Buyers</title>
+  <defs>
+    <linearGradient id="tvcb-tile" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1c3344"/>
+      <stop offset="1" stop-color="#11212e"/>
+    </linearGradient>
+    <linearGradient id="tvcb-gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e7b765"/>
+      <stop offset="1" stop-color="#c98a2b"/>
+    </linearGradient>
+  </defs>
+  <!-- navy tile -->
+  <rect x="2" y="2" width="44" height="44" rx="11" fill="url(#tvcb-tile)"/>
+  <rect x="2.6" y="2.6" width="42.8" height="42.8" rx="10.4" fill="none" stroke="#f0d9a8" stroke-opacity=".14" stroke-width="1.2"/>
+  <!-- house body + roof, geometric -->
+  <g fill="none" stroke="url(#tvcb-gold)" stroke-linejoin="round" stroke-linecap="round">
+    <!-- roof -->
+    <path d="M11 24.5 24 13l13 11.5" stroke-width="2.6"/>
+    <!-- walls -->
+    <path d="M14.4 23v12.2h6.1v-7.3h7v7.3h6.1V23" stroke-width="2.6"/>
+  </g>
+  <!-- upward 'value' chevron in the gable (negative-space growth motif) -->
+  <path d="M19.6 22.3 24 18l4.4 4.3" fill="none" stroke="#f0d9a8" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
