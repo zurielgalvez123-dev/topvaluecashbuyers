@@ -1,9 +1,35 @@
 # Top Value Cash Buyers — robots.txt
-# Allow all reputable crawlers, including AI/answer-engine bots (AEO/GEO).
+# Allow all reputable crawlers, including AI / answer-engine bots (AEO/GEO).
 
 User-agent: *
 Allow: /
 
-# Confirm final canonical host (apex vs www) and keep it consistent with
-# the <link rel="canonical"> tags and sitemap below before launch.
+# Search / RAG bots that can CITE us — explicitly welcomed.
+User-agent: Googlebot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: Bingbot
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: GPTBot
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Perplexity-User
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: Claude-SearchBot
+Allow: /
+User-agent: anthropic-ai
+Allow: /
+
+# Abusive scraper that ignores rules and adds no value — blocked.
+User-agent: Bytespider
+Disallow: /
+
 Sitemap: https://topvaluecashbuyers.com/sitemap.xml
